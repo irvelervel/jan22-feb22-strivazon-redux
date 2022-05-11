@@ -14,6 +14,7 @@ import configureStore from './app/store'
 
 ReactDOM.render(
   <Provider store={configureStore}>
+    {/* wrap your entire application tree into Provider, just like you'd do with BrowserRouter */}
     <App />
   </Provider>,
   document.getElementById('root')

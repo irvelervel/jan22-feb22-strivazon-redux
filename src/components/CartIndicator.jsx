@@ -29,6 +29,8 @@ const CartIndicator = ({ cartLength }) => {
 export default connect(mapStateToProps)(CartIndicator)
 // we're ENRICHING the export of CartIndicator through connect
 
+// connect()() -> is creating a HOC <- Higher Order Component --> ?? it's a component with MORE PROPS than the ones he started with
+
 // the connect function connects a component to the Redux Store in order to read its value or in order to dispatch an
 // action that will trigger a change
 

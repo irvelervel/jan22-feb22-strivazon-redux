@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
+import cartReducer from '../slices/cart/cartSlice'
 
 export default configureStore({
   // let's define our reducers
-  reducer: {},
+  reducer: {
+    cart: cartReducer,
+    // the name "cart" should match the name of the slice!
+  },
 })
 
 // this file is just setting up the Redux Store, and this implementation is valid for ANY JS application
